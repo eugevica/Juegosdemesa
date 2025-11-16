@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--css-->
     <link rel="stylesheet" href="../styles/style.css">
      <title>Notas y contenido</title>
 </head>
 <body>
      <header>
-     <nav class="nav-pc">
-            <a href="../index.html">Principal</a>
-            <a href="./historia_juegos.html">Historia de los juegos de mesa</a> 
-            <a href="./tipos_juegos.html">Tipos de juegos</a> 
-            <a href="#">Notas y contenido</a> 
-            <a href="./contacto.html">Contacto</a>   
+     <!--Barra de navegación Bootstrap-->
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="bgdark">
+            <div class="bg-dark p-4">
+                <div>
+                    <a class="p-nav" href="../index.html">Principal</a><br>
+                    <a class="p-nav" href="#">Historia de los juegos de mesa</a><br>
+                    <a class="p-nav" href="./tipos_juegos.html">Tipos de juegos</a><br>
+                    <a class="p-nav" href="./notas_contenido.html">Notas y contenido</a><br> 
+                    <a class="p-nav" href="./contacto.html">Contacto</a>
+                </div>    
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">                        
+            <div class="container-fluid">                   
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">                  
+                <span class="navbar-toggler-icon"></span>                
+                </button>            
+            </div>                      
         </nav>
     </header>
     <h1>Notas y contenido</h1>
@@ -33,4 +48,6 @@
         <a class="p-borde" href="https://www.x.com">X</a>
     </footer>
 </body>
+<!--Bootstrap JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </html>
