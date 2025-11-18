@@ -9,7 +9,7 @@ body{
         font-size: 24px;
         text-align: justify;
     }  
-}
+    }
 main{
     margin: 20px;    
     }
@@ -27,14 +27,17 @@ main{
     padding: 10px;
     margin: 10px;      
     }
+.row{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: "card-body card-body card-body card-body";
+    }
 .p-borde {
-            text-align: right;
-            font-size: 16px;
-            color :white;
-            padding: 10px;
-        }
-.nav-pc{          
-        /*background-color: bgdark;*/       
+        text-align: right;
+        font-size: 16px;
+        color :white;
+        padding: 10px;
         }
 .p-nav {
         text-align: left;
@@ -45,4 +48,45 @@ footer{
     background-color : black;
     text-align: right;
      }
-
+/*Responsive para tablets*/
+@media(max-width: 900px){
+    body{
+    /*Para una mejor visión del contenido, se cambia el fondo a blanco para mobile*/
+    background-color :white;
+        p{
+            font-size: 16px;        
+        }  
+    }
+/*Elementos de la página tipos_juegos*/
+    .row{
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: "card-body card-body";
+        }
+    .pres-juego{
+    font-size: 16px;
+    }
+    .desc-juego{
+    font-size: 12px;
+    }
+}
+/*Responsive para celulares*/
+@media(max-width: 450px){
+    body{ 
+        p{
+            font-size: 12px;       
+        }  
+    }
+    .row{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "card-body";
+    }
+    .pres-juego{
+    font-size: 12px;
+    }
+    .desc-juego{
+    font-size: 10px;
+    }
+}
