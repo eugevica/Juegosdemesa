@@ -1,0 +1,49 @@
+/*Responsive para tablets*/
+@media(max-width: 900px){
+    body{
+/*Para una mejor visión del contenido, se cambia el fondo a blanco para mobile*/
+    background-color :white;
+        p{
+            font-size: 16px;        
+        }  
+    }
+}
+.p-nav {
+        text-align: left;
+        font-size: 16px;
+        color :white;        
+        }
+
+/*Elementos de la página tipos_juegos*/
+    .row{
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: "card-body card-body";
+        }
+    .pres-juego{
+    font-size: 16px;
+    }
+    .desc-juego{
+    font-size: 12px;
+    }
+
+/*Responsive para celulares*/
+@media(max-width: 450px){
+    body{ 
+        p{
+            font-size: 12px;       
+        }  
+    }
+    .row{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "card-body";
+    }
+    .pres-juego{
+    font-size: 12px;
+    }
+    .desc-juego{
+    font-size: 10px;
+    }
+}
