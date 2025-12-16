@@ -7,17 +7,9 @@
             font-size: 16px;        
         }  
     }
-}
-.p-nav {
-        text-align: left;
-        font-size: 16px;
-        color :white;        
-        }
 
 /*Elementos de la página tipos_juegos*/
     .row{
-        display: grid;
-        align-items: center;
         grid-template-columns: repeat(2,1fr);
         grid-template-areas: "card-body card-body";
         }
@@ -27,7 +19,7 @@
     .desc-juego{
     font-size: 12px;
     }
-
+}
 /*Responsive para celulares*/
 @media(max-width: 450px){
     body{ 
@@ -45,5 +37,9 @@
     }
     .desc-juego{
     font-size: 10px;
+    }
+    .retratos{
+    grid-template-columns: 1fr;
+    grid-template-areas: "portret";   
     }
 }

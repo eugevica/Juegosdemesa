@@ -6,15 +6,48 @@ body{
     font-family: Oswald;
     color :black;
     background-color :gray;
+    align-items: center;
     p{
         color: rgb(60, 54, 54);
         font-size: 24px;        
         text-align: justify;
     }  
-    }
-
+    
+}
     main{
     margin: 20px;    
+}
+.p-nav {
+        text-align: left;
+        font-size: 16px;
+        color :white;        
+}
+.annav {
+        text-align: left;
+        font-size: 15px;
+        color: black;       
+}    
+textarea{
+    height: 200px;
+    width: 90%;
+}
+.retratos{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "portret portret";   
+}
+.portret{
+    height: 300px;
+    width: 300px;
+    background-color: black; 
+    margin: 15px;
+    padding: 10px;     
+}
+.portext{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
 }
 
 

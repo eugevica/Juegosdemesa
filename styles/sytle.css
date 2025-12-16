@@ -32,9 +32,9 @@ main {
   color: white;
 }
 
-.annav {
+.p-annav {
   text-align: left;
-  font-size: 15px;
+  font-size: 16px;
   color: black;
 }
 
@@ -144,4 +144,4 @@ footer {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=sytle.css.map */
