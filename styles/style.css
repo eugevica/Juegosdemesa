@@ -17,9 +17,9 @@ body {
   align-items: center;
 }
 body p {
-  color: rgb(60, 54, 54);
-  font-size: 24px;
   text-align: justify;
+  font-size: 24px;
+  color: rgb(60, 54, 54);
 }
 
 main {
@@ -39,8 +39,8 @@ main {
 }
 
 textarea {
-  height: 200px;
-  width: 90%;
+  height: 400px;
+  width: 80%;
 }
 
 .retratos {
@@ -59,9 +59,9 @@ textarea {
 }
 
 .portext {
-  color: white;
-  font-size: 20px;
   text-align: justify;
+  font-size: 20px;
+  color: white;
 }
 
 footer {
@@ -77,12 +77,13 @@ footer {
 }
 
 .pres-juego {
-  font-size: 20px;
   text-align: center;
+  font-size: 20px;
   color: black;
 }
 
 .desc-juego {
+  text-align: justify;
   font-size: 16px;
   color: darkgray;
 }

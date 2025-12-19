@@ -1,3 +1,5 @@
+@use '../utilities/mixins';
+
 h1{
     color: black;    
 }
@@ -8,46 +10,45 @@ body{
     background-color :gray;
     align-items: center;
     p{
-        color: rgb(60, 54, 54);
-        font-size: 24px;        
-        text-align: justify;
-    }  
-    
+        @include mixins.est-texto (justify, 24px,rgb(60, 54, 54))
+        
+    } 
 }
-    main{
+
+main{
     margin: 20px;    
 }
+
 .p-nav {
-        text-align: left;
-        font-size: 16px;
-        color :white;        
+    @include mixins.est-texto (left, 16px, white)               
 }
+
 .annav {
-        text-align: left;
-        font-size: 15px;
-        color: black;       
-}    
+    @include mixins.est-texto (left, 15px, black)         
+} 
+
 textarea{
-    height: 200px;
-    width: 90%;
+    height: 400px;
+    width: 80%;
 }
+
 .retratos{
     display: grid;
     align-items: center;
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: "portret portret";   
 }
-.portret{
+
+.portret{    
     height: 300px;
     width: 300px;
     background-color: black; 
     margin: 15px;
     padding: 10px;     
 }
+
 .portext{
-    color: white;
-    font-size: 20px;
-    text-align: justify;
+    @include mixins.est-texto (justify, 20px, white)      
 }
 
 

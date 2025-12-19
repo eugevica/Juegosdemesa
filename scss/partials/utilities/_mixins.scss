@@ -1,0 +1,6 @@
+//Estilado de textos
+@mixin est-texto($text-align, $font-size, $color) {
+    text-align: $text-align;
+    font-size: $font-size;
+    color: $color;        
+}

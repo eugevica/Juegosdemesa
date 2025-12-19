@@ -1,26 +1,27 @@
+@use '../utilities/mixins';
+
 .card{
     width: 250px;
     padding: 10px;
     margin: 10px;      
     }
+
 .pres-juego{
-    font-size: 20px;
-    text-align: center;
-    color :black;        
+    @include mixins.est-texto (center, 20px, black)         
     }
+
 .desc-juego{
-    font-size: 16px;
-    color :darkgray;        
+    @include mixins.est-texto (justify, 16px, darkgray)         
     }
+
 .row{
     display: grid;
     align-items: center;
     grid-template-columns: repeat(4,1fr);
     grid-template-areas: "card-body card-body card-body card-body";
     }
+
 .p-borde {
-        text-align: right;
-        font-size: 16px;
-        color :white;
-        padding: 10px;
+    @include mixins.est-texto (right, 16px, white);       
+    padding: 10px;
         }
