@@ -1,5 +1,5 @@
 /*Responsive para tablets*/
-@media(max-width: 900px){
+@media(max-width: 1100px){
     body{
 /*Para una mejor visión del contenido, se cambia el fondo a blanco para mobile*/
     background-color :white;
@@ -8,8 +8,23 @@
         }  
     }
 
+/*Variación tamaño del contenedor de los iframes de notas*/
+.contenido{        
+    margin-top: 20px;    
+    }
+
+.nota{
+    height: 320px;
+    width: 360px;
+}  
+
+.cont-nota {
+    height: 240px;
+    width: 320px;
+}
+
 /*Elementos de la página tipos_juegos*/
-    .row{
+    .row{        
         grid-template-columns: repeat(2,1fr);
         grid-template-areas: "card-body card-body";
         }
@@ -19,27 +34,41 @@
     .desc-juego{
     font-size: 12px;
     }
+
+/*Estilado formulario de contacto*/
+    textarea{
+    height: 300px;
+    }
 }
 /*Responsive para celulares*/
-@media(max-width: 450px){
+@media(max-width: 550px){
     body{ 
         p{
             font-size: 12px;       
         }  
     }
     .row{
-        display: grid;
+        display: grid;        
         grid-template-columns: 1fr;
         grid-template-areas: "card-body";
     }
     .pres-juego{
-    font-size: 12px;
+        font-size: 12px;
     }
     .desc-juego{
-    font-size: 10px;
+        font-size: 10px;
     }
     .retratos{
+        grid-template-columns: 1fr;
+        grid-template-areas: "portret";   
+    }
+    
+    .contenido{    
     grid-template-columns: 1fr;
-    grid-template-areas: "portret";   
+    grid-template-areas: "nota";
+    }
+
+    textarea{
+    height: 200px;
     }
 }

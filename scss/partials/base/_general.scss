@@ -10,14 +10,13 @@ body{
     background-color :gray;
     align-items: center;
     p{
-        @include mixins.est-texto (justify, 24px,rgb(60, 54, 54))
-        
+        @include mixins.est-texto (justify, 24px,rgb(60, 54, 54))        
     } 
 }
 
 main{
-    margin: 20px;    
-}
+    margin: 20px;  
+}  
 
 .p-nav {
     @include mixins.est-texto (left, 16px, white)               
@@ -50,5 +49,6 @@ textarea{
 .portext{
     @include mixins.est-texto (justify, 20px, white)      
 }
+
 
 
